@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+header {
+    width: 50%;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+span {
+    font-size: 24px;
+    color: #6dc3c3;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    border: 0px solid black;
+    padding: 12px 36px;
+    border-radius: 8px;
+}
+
+a:hover {
+    color: #6dc3c3;
+}
+
+nav a.current {
+    text-transform: uppercase;
+    color: black;
+    background-color: #6dc3c3;
+    font-weight: 700;
+}
+
+.navbar ul {
+    padding: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+
+main,
+footer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup img {
+    border-radius: 5px;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.somebrand .popup-content {
+    background: none;
+}
+
+.popup-content p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #575757;
+}
+
+#close-btn {
+    display: none;
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #e8e8e8;
+    margin: 60px 0px 32px 0px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #dbdbdb;
+    margin: 12px 0px;
+}
+
+h3 {
+    font-weight: 200;
+    color: #f7defbef;
+}
+
+.about h2 {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    row-gap: 90px;
+}
+
+.another-three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    row-gap: 60px;
+}
+
+.prettygif {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    row-gap: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.prettygif div {
+    border: 0px solid black;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 4%;
+}
+
+.prettygif h3 {
+    text-align: center;
+    padding: 8px 0px 16px 0px;
+}
+
+.prettygif img {
+    border-radius: 15px 15px 15px 15px;
+}
+
+.module {
+    border: 0px solid black;
+    padding: 36px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.module-p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.explore {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: -8px -8px 8px rgba(174, 174, 192, 0.25),
+        5px 5px 5px #fff;
+    color: rgb(195, 195, 195);
+    background: rgba(255, 255, 255, 0.286);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.explore:hover {
+    color: black;
+    background: #6dc3c3;
+    font-weight: 900;
+    color: #fff;
+}
+
+
+
+
+.heading {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.heading p {
+    color: #cacaca;
+    margin-top: -32px;
+}
+
+.somebrand {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+}
+
+.somebrand img {
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.somebrand p {
+    text-align: center;
+    font-weight: 100;
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+.popup-text p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #575757;
+}
+
+footer {
+    margin-top: 48px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+footer p {
+    color: #6dc3c3;
+    font-size: 16px;
+}
+
+.xerjoff p {
+    text-align: center;
+    color: rgb(255, 249, 136);
+    margin-bottom: 20px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 280px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+
+.flip-card-front img {
+    border-radius: 150px;
+    border: 5px dotted #7f5885;
+    border-radius: 150px;
+    box-shadow: -5px -5px 10px #7f58857c,
+        5px 5px 10px rgba(174, 174, 192, 0.4);
+}
+
+.flip-card-front h3 {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.flip-card-back {
+    background-color: #f9d4ffef;
+    color: #575757;
+    transform: rotateY(180deg);
+    padding: 24px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        width: 80%;
+    }
+
+    .navbar ul{
+        padding:5px;
+
+    }
+
+    nav ul {
+        padding: 2px;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 3px;
+    }
+    nav ul li{
+        padding: 3px;
+        font-size: smaller;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 10px 10px;
+    }
+
+    .three-column-grid,
+    .another-three-column-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .module {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .somebrand {
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+    .prettygif {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        Row-gap: 20px;
+    }
+    footer p{
+        font-size: 10pt;
+    }
+
+}
